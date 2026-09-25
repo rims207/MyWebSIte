@@ -1,4 +1,742 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap');
-:root{--primary:#0b5ed7;--aqua:#22c7c9;--teal:#008f95;--dark:#102a43;--text:#243b53;--muted:#627d98;--surface:#f7fafc;--white:#fff;--border:#d9e2ec;--danger:#dc3545;--radius:18px}*{box-sizing:border-box}body{margin:0;color:var(--text);font:15px 'DM Sans',Arial,sans-serif;line-height:1.55}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button{cursor:pointer;border:0}.announcement{background:var(--dark);color:#fff;text-align:center;font-size:12px;padding:8px}.announcement span{color:var(--aqua);padding:0 12px}.header{height:78px;max-width:1240px;margin:auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;gap:30px}.logo{font-size:23px;font-weight:700;letter-spacing:-1.5px;color:var(--dark);white-space:nowrap}.logo span:first-child{display:inline-grid;place-items:center;background:var(--primary);color:#fff;font-size:11px;letter-spacing:-1px;width:28px;height:28px;border-radius:8px;margin-right:5px}.logo>span:last-child{color:var(--primary)}.desktop-nav{display:flex;gap:25px;font-size:13px;font-weight:600}.desktop-nav a:hover,.text-link:hover{color:var(--primary)}.header-actions{display:flex;align-items:center;gap:18px;font-size:22px}.header-actions b{font-size:10px;background:var(--aqua);color:var(--dark);padding:2px 6px;border-radius:20px;vertical-align:top}.menu-button{display:none;background:none;font-size:22px}.mobile-nav{display:none}.hero{min-height:570px;background:var(--surface);display:grid;grid-template-columns:1fr 1fr;gap:30px;padding:75px max(24px,calc((100% - 1150px)/2));align-items:center}.eyebrow{font-size:11px;letter-spacing:1.8px;text-transform:uppercase;color:var(--teal);font-weight:700}.hero h1,.not-found h1{font-size:clamp(44px,6vw,78px);line-height:1.05;letter-spacing:-3px;color:var(--dark);max-width:600px;margin:18px 0}.hero h1 em,.not-found h1 em{font-family:Georgia,serif;color:var(--primary);font-weight:400}.hero p{font-size:17px;color:var(--muted);max-width:470px}.hero-actions{display:flex;gap:25px;align-items:center;margin:30px 0}.btn{display:inline-block;border-radius:8px;padding:13px 20px;font-weight:700;border:1px solid transparent;transition:.2s}.btn-primary{background:var(--primary);color:#fff}.btn-primary:hover{background:#084cac;transform:translateY(-1px)}.btn-outline{border-color:var(--border);background:#fff;color:var(--dark)}.btn-dark{background:var(--dark);color:#fff}.btn-light{background:#fff;color:var(--primary)}.text-link{color:var(--primary);font-weight:700;font-size:13px}.hero-trust{display:flex;gap:20px;color:var(--muted);font-size:11px}.hero-image{position:relative}.hero-image img{width:100%;height:430px;object-fit:cover;border-radius:25px}.hero-card{position:absolute;right:-20px;bottom:25px;background:#fff;padding:16px 20px;border-radius:12px;box-shadow:0 12px 35px #102a4320;display:grid;gap:2px}.hero-card strong{font-size:11px;color:var(--teal);text-transform:uppercase}.hero-card span{font-weight:700}.hero-card b{color:var(--primary);font-size:14px}.section{max-width:1150px;margin:auto;padding:90px 24px}.soft-section{max-width:none;padding-left:max(24px,calc((100% - 1150px)/2));padding-right:max(24px,calc((100% - 1150px)/2));background:var(--surface)}.section-heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:35px}.section h2,.promo h2{font-size:35px;letter-spacing:-1.5px;line-height:1.1;margin:10px 0;color:var(--dark)}.category-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.category-tile{height:220px;border-radius:var(--radius);padding:23px;color:#fff;position:relative;overflow:hidden}.category-tile:after{content:'✦';position:absolute;right:-10px;bottom:-35px;font-size:150px;opacity:.13}.category-tile span{font-size:11px;opacity:.7}.category-tile h3{font-size:25px;margin:55px 0 0}.category-tile p{margin:0;font-size:12px;opacity:.8}.category-tile b{position:absolute;right:23px;top:23px}.tile-blue{background:var(--primary)}.tile-aqua{background:var(--aqua);color:var(--dark)}.tile-dark{background:var(--dark)}.tile-sand{background:#dbad72;color:var(--dark)}.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.product-card{min-width:0}.product-image{height:285px;background:#eef3f7;border-radius:14px;overflow:hidden;position:relative}.product-image img{width:100%;height:100%;object-fit:cover;transition:.4s}.product-card:hover .product-image img{transform:scale(1.04)}.badge{position:absolute;left:12px;top:12px;background:#fff;color:var(--primary);font-size:10px;font-weight:700;padding:5px 8px;border-radius:4px}.wish{position:absolute;right:12px;top:12px;background:#fff;border-radius:50%;width:32px;height:32px;color:var(--dark);font-size:20px}.wish.active{color:#e25572}.product-info{padding:13px 2px}.product-meta{display:flex;justify-content:space-between;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.5px}.product-meta span:last-child{color:#e49c2e}.product-info h3{font-size:15px;margin:6px 0;color:var(--dark)}.price{font-weight:700;color:var(--primary)}del{font-size:11px;font-weight:400;color:var(--muted);margin-left:5px}.card-bottom{display:flex;justify-content:space-between;align-items:center;margin-top:8px}.card-bottom small{font-size:10px;color:var(--muted)}.add-mini{background:none;color:var(--teal);font-size:11px;font-weight:700}.promo{max-width:1150px;margin:0 auto 90px;background:var(--primary);border-radius:20px;color:#fff;padding:55px 65px;display:flex;justify-content:space-between;overflow:hidden}.promo h2{color:#fff}.promo h2 em{font-family:Georgia,serif;color:var(--aqua);font-weight:400}.promo p{opacity:.8}.promo-art{font-size:110px;font-weight:700;letter-spacing:-10px;align-self:center;opacity:.18}.promo-art span{font-family:Georgia,serif}.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}.benefits article{border-top:1px solid var(--border);padding-top:20px}.benefit-icon{color:var(--primary);font-size:28px}.benefits h3{margin:12px 0 5px;color:var(--dark)}.benefits p{color:var(--muted);max-width:280px;font-size:13px}.newsletter{text-align:center;background:#e8fbfb;padding:75px 20px}.newsletter h2{margin:10px 0;color:var(--dark)}.newsletter p{color:var(--muted)}.newsletter-form{display:flex;max-width:450px;margin:25px auto 8px}.newsletter-form input{flex:1;border:1px solid var(--border);padding:13px;border-radius:7px 0 0 7px}.newsletter-form button{border-radius:0 7px 7px 0}.newsletter small{color:var(--teal)}footer{background:var(--dark);color:#fff;padding:55px max(24px,calc((100% - 1150px)/2)) 20px}.footer-main{display:grid;grid-template-columns:2fr repeat(3,1fr);gap:35px}.footer-logo{color:#fff}.footer-main p{color:#a8bbcc;max-width:220px}.footer-main h4{margin-top:0}.footer-main>div>a:not(.logo){display:block;color:#a8bbcc;font-size:13px;margin:8px 0}.footer-bottom{border-top:1px solid #ffffff20;margin-top:45px;padding-top:18px;color:#a8bbcc;font-size:11px;display:flex;justify-content:space-between}.footer-bottom a{color:#fff}.page-width{max-width:1150px;margin:auto;padding:40px 24px}.shop-page{max-width:1150px;margin:auto;padding:55px 24px}.page-intro{display:flex;justify-content:space-between;align-items:end;margin-bottom:35px}.page-intro h1{font-size:45px;line-height:1;margin:10px 0;color:var(--dark);letter-spacing:-2px}.page-intro p{color:var(--muted)}.breadcrumbs{font-size:11px;color:var(--muted)}.breadcrumbs span{margin:0 7px}.shop-toolbar{display:flex;gap:15px;margin-bottom:30px}.search-box{display:flex;align-items:center;border:1px solid var(--border);border-radius:7px;flex:1;max-width:500px}.search-box span{font-size:24px;padding:0 10px;color:var(--muted)}.search-box input{border:0;outline:0;width:100%;padding:12px 10px}.sort-label{font-size:12px;margin-left:auto;display:flex;align-items:center;gap:8px}.sort-label select,.filters select{border:1px solid var(--border);border-radius:6px;background:#fff;padding:10px}.filter-toggle{display:none}.shop-layout{display:grid;grid-template-columns:190px 1fr;gap:35px}.filters{font-size:12px}.filter-head{display:flex;justify-content:space-between;margin-bottom:22px;font-size:14px}.filter-head button{display:none;background:none;font-size:22px}.filters label{display:block;font-weight:700;margin:20px 0}.filters select{display:block;width:100%;margin-top:8px;color:var(--muted)}.check-row{display:flex!important;gap:8px}.clear-filters{background:none;padding:0}.results-meta{display:flex;justify-content:space-between;margin-bottom:15px;font-size:12px}.empty-state{text-align:center;padding:80px 20px;background:var(--surface);border-radius:15px}.empty-state>div{font-size:35px;color:var(--aqua)}.empty-state h2{color:var(--dark)}.product-detail{padding-top:20px}.detail-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center;margin-top:35px}.detail-image{background:var(--surface);border-radius:20px;overflow:hidden}.detail-image img{width:100%;height:570px;object-fit:cover}.detail-copy h1{font-size:48px;line-height:1.05;letter-spacing:-2px;color:var(--dark);margin:13px 0}.rating{font-size:13px;color:#d79a2d}.rating span{color:var(--muted)}.detail-price{font-size:24px;font-weight:700;color:var(--primary);margin:20px 0}.detail-copy>p{color:var(--muted);max-width:450px}.selection{margin:28px 0}.selection label{display:flex;justify-content:space-between;font-weight:700;font-size:13px}.selection a{color:var(--primary);font-size:11px}.size-options{display:flex;gap:8px;margin-top:12px}.size{background:#fff;border:1px solid var(--border);border-radius:5px;padding:9px 14px}.size.selected{background:var(--dark);color:#fff;border-color:var(--dark)}.quantity{display:flex;gap:15px;align-items:center;margin-bottom:25px;font-size:13px}.quantity label{margin-right:15px}.quantity button{background:var(--surface);border-radius:5px;padding:6px 12px}.detail-actions{display:flex;gap:10px}.delivery-note{border-top:1px solid var(--border);margin-top:30px;padding-top:18px;display:grid;font-size:13px}.delivery-note span{color:var(--muted);font-size:11px}.details-lower{border-top:1px solid var(--border);margin-top:70px;padding:35px 0}.details-lower p{color:var(--muted)}.cart-layout,.checkout-layout{display:grid;grid-template-columns:1.4fr .7fr;gap:50px}.cart-item{display:flex;gap:20px;padding:18px 0;border-bottom:1px solid var(--border)}.cart-item img{width:125px;height:125px;object-fit:cover;border-radius:10px}.cart-item h3{margin:3px 0;color:var(--dark)}.cart-item p{font-size:12px;color:var(--muted)}.cart-item strong{color:var(--primary)}.cart-controls{display:flex;align-items:center;gap:12px;margin-top:15px;font-size:12px}.cart-controls button:not(.remove){background:var(--surface);padding:4px 10px;border-radius:4px}.remove{background:none;color:var(--danger);margin-left:15px}.order-summary{background:var(--surface);padding:25px;border-radius:12px;height:max-content}.order-summary h2{color:var(--dark);margin-top:0;font-size:20px}.order-summary>div{display:flex;justify-content:space-between;margin:13px 0;font-size:13px}.order-summary span{color:var(--muted)}.order-summary .total{font-size:18px}.order-summary .total span{color:var(--dark)}.full{width:100%;text-align:center;margin-top:18px}.continue{display:block;text-align:center;margin-top:17px;color:var(--primary);font-size:12px}.checkout-form{border:1px solid var(--border);padding:28px;border-radius:12px}.checkout-form h2{font-size:20px;color:var(--dark);margin:0 0 20px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:17px;margin-bottom:30px}.form-grid label{font-size:12px;font-weight:700}.form-grid input,.form-grid select,.form-grid textarea{display:block;width:100%;border:1px solid var(--border);border-radius:5px;padding:10px;margin-top:6px}.form-grid .wide{grid-column:1/-1}.payment-option{display:flex;gap:12px;border:1px solid var(--border);padding:15px;border-radius:7px;margin:10px 0}.payment-option span{display:grid}.payment-option small,.form-note{color:var(--muted);font-size:11px}.not-found{padding-top:120px;padding-bottom:160px}.not-found p{color:var(--muted);max-width:420px;margin-bottom:25px}.not-found .text-link{margin-left:20px}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
-@media(max-width:800px){.desktop-nav{display:none}.menu-button{display:block}.mobile-nav{display:none;background:#fff;padding:10px 24px;border-bottom:1px solid var(--border)}.mobile-nav.open{display:grid}.mobile-nav a{padding:10px 0}.hero{grid-template-columns:1fr;padding-top:45px;min-height:0}.hero-image{order:-1}.hero-image img{height:300px}.hero-card{right:10px}.hero h1{font-size:54px}.hero-trust{flex-wrap:wrap}.section{padding-top:65px;padding-bottom:65px}.category-grid{grid-template-columns:1fr 1fr}.product-grid{grid-template-columns:repeat(2,1fr);gap:25px 12px}.product-image{height:210px}.promo{margin:0 20px 65px;padding:35px 25px}.promo-art{font-size:65px}.benefits{grid-template-columns:1fr}.footer-main{grid-template-columns:1fr 1fr}.footer-main>div:first-child{grid-column:1/-1}.shop-page{padding-top:35px}.page-intro{display:block}.breadcrumbs{margin-top:25px}.shop-toolbar{flex-wrap:wrap}.filter-toggle{display:block;background:var(--surface);padding:12px;border-radius:6px}.sort-label{margin-left:0}.filters{display:none}.filters.visible{display:block;position:fixed;inset:0;background:#fff;z-index:5;padding:25px;overflow:auto}.filter-head button{display:block}.shop-layout{display:block}.detail-grid,.cart-layout,.checkout-layout{grid-template-columns:1fr;gap:28px}.detail-image img{height:400px}.detail-copy h1{font-size:40px}.order-summary{order:2}.cart-item img{width:100px;height:100px}.form-grid{grid-template-columns:1fr}.form-grid .wide{grid-column:auto}}
-@media(max-width:480px){.header{padding:0 16px}.header-actions{gap:10px}.hero{padding-left:18px;padding-right:18px}.hero h1{font-size:47px}.hero-actions{align-items:start;flex-direction:column;gap:15px}.category-tile{height:180px;padding:17px}.category-tile h3{margin-top:40px}.section-heading{align-items:start;display:block}.section-heading .text-link{display:inline-block;margin-top:12px}.product-image{height:175px}.card-bottom small{display:none}.newsletter-form{display:block}.newsletter-form input,.newsletter-form button{width:100%;border-radius:6px;margin:4px 0}.footer-bottom{display:block}.footer-bottom span{display:block;margin:8px 0}.promo{display:block}.promo-art{display:none}.page-intro h1{font-size:38px}}
+const $ = (selector) => document.querySelector(selector);
+const $$ = (selector) => document.querySelectorAll(selector);
+
+const store = {
+  get(key, fallback) {
+    try { return JSON.parse(localStorage.getItem(key)) ?? fallback; }
+    catch { return fallback; }
+  },
+  set(key, value) { localStorage.setItem(key, JSON.stringify(value)); }
+};
+
+function cart() { return store.get('smartshoes-cart', []); }
+function saveCart(items) { store.set('smartshoes-cart', items); updateCartCount(); }
+function wishlist() { return store.get('smartshoes-wishlist', []); }
+
+function updateCartCount() {
+  const countEl = $('#cart-count');
+  if (!countEl) return;
+  const total = cart().reduce((sum, item) => sum + item.qty, 0);
+  countEl.textContent = total;
+}
+
+function header() {
+  const root = $('#site-header');
+  if (!root) return;
+
+  root.innerHTML = `
+    <div class="announcement">Free delivery on orders over Rs. 5,000 <span>•</span> Cash on Delivery available nationwide</div>
+    <header class="header">
+      <a class="logo" href="index.html" aria-label="SmartShoes home"><span>SS</span> smart<span>shoes</span></a>
+      <nav class="desktop-nav">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="shop.html?category=men">Men</a>
+        <a href="shop.html?category=women">Women</a>
+        <a href="shop.html?category=kids">Kids</a>
+        <a href="shop.html?category=sneakers">Sneakers</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="header-actions">
+        <a href="search.html" aria-label="Search">⌕</a>
+        <a href="wishlist.html" aria-label="Wishlist">♡</a>
+        <a class="cart-link" href="cart.html" aria-label="Cart">▢ <b id="cart-count">0</b></a>
+        <button class="menu-button" id="menu-button" aria-label="Open menu">☰</button>
+      </div>
+    </header>
+    <nav class="mobile-nav" id="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop all</a>
+      <a href="shop.html?category=men">Men</a>
+      <a href="shop.html?category=women">Women</a>
+      <a href="shop.html?category=kids">Kids</a>
+      <a href="faq.html">Help</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  `;
+
+  updateCartCount();
+
+  $('#menu-button')?.addEventListener('click', () => {
+    $('#mobile-nav')?.classList.toggle('open');
+  });
+}
+
+function footer() {
+  const root = $('#site-footer');
+  if (!root) return;
+
+  root.innerHTML = `
+    <footer>
+      <div class="footer-main">
+        <div>
+          <a class="logo footer-logo" href="index.html"><span>SS</span> smart<span>shoes</span></a>
+          <p>Footwear for every step, delivered across Pakistan.</p>
+        </div>
+        <div>
+          <h4>Shop</h4>
+          <a href="shop.html">All shoes</a>
+          <a href="shop.html?category=men">Men</a>
+          <a href="shop.html?category=women">Women</a>
+          <a href="shop.html?category=kids">Kids</a>
+        </div>
+        <div>
+          <h4>Help</h4>
+          <a href="faq.html">FAQs</a>
+          <a href="size-guide.html">Size guide</a>
+          <a href="shipping.html">Shipping</a>
+          <a href="returns.html">Returns</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 SmartShoes. Made for Pakistan.</span>
+        <span><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></span>
+      </div>
+    </footer>
+  `;
+}
+
+function productCard(product) {
+  const saved = wishlist().includes(product.id);
+  return `
+    <article class="product-card">
+      <div class="product-image">
+        <a href="product.html?id=${product.id}"><img src="${product.image}" alt="${product.name}"></a>
+        ${product.badge ? `<span class="badge">${product.badge}</span>` : ''}
+        <button class="wish ${saved ? 'active' : ''}" data-wish="${product.id}" aria-label="${saved ? 'Remove from' : 'Add to'} wishlist">${saved ? '♥' : '♡'}</button>
+      </div>
+      <div class="product-info">
+        <div class="product-meta"><span>${product.category}</span><span>★ ${product.rating}</span></div>
+        <h3><a href="product.html?id=${product.id}">${product.name}</a></h3>
+        <div class="price">${money(product.price)} ${product.oldPrice ? `<del>${money(product.oldPrice)}</del>` : ''}</div>
+        <div class="card-bottom">
+          <small>Sizes ${product.sizes.join(' · ')}</small>
+          <button class="add-mini" data-add="${product.id}">+ Add</button>
+        </div>
+      </div>
+    </article>
+  `;
+}
+
+function bindCardActions() {
+  $$('[data-add]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const product = getProduct(button.dataset.add);
+      if (!product) return;
+
+      const current = cart();
+      const existing = current.find((item) => item.id === product.id);
+
+      if (existing) existing.qty += 1;
+      else current.push({ id: product.id, qty: 1, size: product.sizes[0], color: product.color });
+
+      saveCart(current);
+      button.textContent = 'Added ✓';
+      setTimeout(() => { button.textContent = '+ Add'; }, 1000);
+    });
+  });
+
+  $$('[data-wish]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const id = button.dataset.wish;
+      let items = wishlist();
+
+      if (items.includes(id)) {
+        items = items.filter((item) => item !== id);
+        button.classList.remove('active');
+        button.textContent = '♡';
+      } else {
+        items.push(id);
+        button.classList.add('active');
+        button.textContent = '♥';
+      }
+
+      store.set('smartshoes-wishlist', items);
+    });
+  });
+}
+
+function renderHome() {
+  const el = $('#home-products');
+  if (!el) return;
+
+  el.innerHTML = PRODUCTS.slice(0, 4).map(productCard).join('');
+  bindCardActions();
+
+  $('#newsletter-form')?.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const msg = $('#newsletter-message');
+    msg.textContent = 'Thanks — you’re on the list!';
+    event.target.reset();
+  });
+}
+
+function renderShop() {
+  const params = new URLSearchParams(location.search);
+  const categoryFilter = $('#category-filter');
+  const saleFilter = $('#sale-filter');
+  const searchInput = $('#shop-search');
+  const sortSelect = $('#sort-select');
+  const resultsEl = $('#shop-products');
+  const countEl = $('#result-count');
+  const emptyEl = $('#empty-state');
+
+  if (!resultsEl) return;
+
+  const initialCategory = params.get('category') || 'all';
+  if (categoryFilter && initialCategory !== 'all') {
+    categoryFilter.value = initialCategory;
+  }
+  if (saleFilter && params.get('sale') === 'true') saleFilter.checked = true;
+
+  function draw() {
+    let list = [...PRODUCTS];
+
+    const search = (searchInput?.value || '').toLowerCase();
+    const category = (categoryFilter?.value || 'all').toLowerCase();
+    const size = $('#size-filter')?.value || 'all';
+    const price = $('#price-filter')?.value || 'all';
+    const onSale = $('#sale-filter')?.checked || false;
+    const sort = sortSelect?.value || 'featured';
+
+    if (search) {
+      list = list.filter((product) => (
+        `${product.name} ${product.category} ${product.gender} ${product.brand} ${product.description}`
+      ).toLowerCase().includes(search));
+    }
+
+    if (category !== 'all') {
+      list = list.filter((product) => product.category.toLowerCase() === category || product.gender.toLowerCase() === category);
+    }
+
+    if (size !== 'all') {
+      list = list.filter((product) => product.sizes.includes(size));
+    }
+
+    if (price !== 'all') {
+      const [min, max] = price.split('-').map(Number);
+      list = list.filter((product) => product.price >= min && product.price <= max);
+    }
+
+    if (onSale) {
+      list = list.filter((product) => Boolean(product.oldPrice));
+    }
+
+    if (sort === 'price-low') list.sort((a, b) => a.price - b.price);
+    if (sort === 'price-high') list.sort((a, b) => b.price - a.price);
+    if (sort === 'rating') list.sort((a, b) => b.rating - a.rating);
+    if (sort === 'newest') list.reverse();
+
+    countEl.textContent = `${list.length} ${list.length === 1 ? 'pair' : 'pairs'}`;
+    resultsEl.innerHTML = list.map(productCard).join('');
+    emptyEl.hidden = list.length > 0;
+
+    bindCardActions();
+  }
+
+  [searchInput, categoryFilter, $('#size-filter'), $('#price-filter'), saleFilter, sortSelect].forEach((element) => {
+    element?.addEventListener('input', draw);
+    element?.addEventListener('change', draw);
+  });
+
+  $('#clear-filters')?.addEventListener('click', () => {
+    window.location.href = 'shop.html';
+  });
+
+  $('#empty-clear')?.addEventListener('click', () => {
+    window.location.href = 'shop.html';
+  });
+
+  $('#filter-toggle')?.addEventListener('click', () => {
+    $('#filters')?.classList.add('visible');
+  });
+
+  $('#close-filters')?.addEventListener('click', () => {
+    $('#filters')?.classList.remove('visible');
+  });
+
+  draw();
+}
+
+function renderProduct() {
+  const id = new URLSearchParams(location.search).get('id');
+  const product = getProduct(id) || PRODUCTS[0];
+  const wrapper = $('#product-detail');
+  if (!wrapper) return;
+
+  wrapper.innerHTML = `
+    <div class="breadcrumbs">Home / Shop / ${product.name}</div>
+    <div class="detail-grid">
+      <div class="detail-image"><img src="${product.image}" alt="${product.name}"></div>
+      <div class="detail-copy">
+        <span class="eyebrow">${product.category} · ${product.gender}</span>
+        <h1>${product.name}</h1>
+        <div class="rating">★ ${product.rating} <span>· Loved by SmartShoes customers</span></div>
+        <div class="detail-price">${money(product.price)} ${product.oldPrice ? `<del>${money(product.oldPrice)}</del>` : ''}</div>
+        <p>${product.description}</p>
+
+        <div class="selection">
+          <label>Choose your size <a href="size-guide.html">Size guide</a></label>
+          <div class="size-options">
+            ${product.sizes.map((size, index) => `<button class="size ${index === 0 ? 'selected' : ''}" data-size="${size}">${size}</button>`).join('')}
+          </div>
+        </div>
+
+        <div class="quantity">
+          <label>Quantity</label>
+          <button id="minus" type="button">−</button>
+          <span id="qty">1</span>
+          <button id="plus" type="button">+</button>
+        </div>
+
+        <div class="detail-actions">
+          <button class="btn btn-primary" id="detail-add" type="button">Add to cart</button>
+          <button class="btn btn-outline" id="detail-wish" type="button">♡ Wishlist</button>
+        </div>
+
+        <div class="delivery-note">
+          <strong>🚚 Delivery across Pakistan</strong>
+          <span>COD available. Delivery charges are calculated at checkout.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="details-lower">
+      <h2>Made for your everyday</h2>
+      <p>Every SmartShoes pair is selected with comfort, versatility and your daily routine in mind. Please check the size guide before ordering if you are between sizes.</p>
+    </div>
+  `;
+
+  let quantity = 1;
+  let selectedSize = product.sizes[0];
+
+  $$('.size').forEach((button) => {
+    button.addEventListener('click', () => {
+      selectedSize = button.dataset.size;
+      $$('.size').forEach((btn) => btn.classList.remove('selected'));
+      button.classList.add('selected');
+    });
+  });
+
+  $('#plus')?.addEventListener('click', () => {
+    quantity += 1;
+    $('#qty').textContent = quantity;
+  });
+
+  $('#minus')?.addEventListener('click', () => {
+    if (quantity > 1) {
+      quantity -= 1;
+      $('#qty').textContent = quantity;
+    }
+  });
+
+  $('#detail-add')?.addEventListener('click', () => {
+    const current = cart();
+    const existing = current.find((item) => item.id === product.id && item.size === selectedSize);
+
+    if (existing) existing.qty += quantity;
+    else current.push({ id: product.id, qty: quantity, size: selectedSize, color: product.color });
+
+    saveCart(current);
+    $('#detail-add').textContent = 'Added to cart ✓';
+  });
+
+  const saved = wishlist().includes(product.id);
+  $('#detail-wish').textContent = saved ? '♥ Saved' : '♡ Wishlist';
+
+  $('#detail-wish')?.addEventListener('click', () => {
+    let items = wishlist();
+
+    if (items.includes(product.id)) {
+      items = items.filter((item) => item !== product.id);
+      $('#detail-wish').textContent = '♡ Wishlist';
+    } else {
+      items.push(product.id);
+      $('#detail-wish').textContent = '♥ Saved';
+    }
+
+    store.set('smartshoes-wishlist', items);
+  });
+}
+
+function getSummary() {
+  const current = cart();
+  let subtotal = 0;
+
+  current.forEach((item) => {
+    const product = getProduct(item.id);
+    if (product) subtotal += product.price * item.qty;
+  });
+
+  const delivery = subtotal >= 5000 || subtotal === 0 ? 0 : 250;
+  return { items: current, subtotal, delivery, total: subtotal + delivery };
+}
+
+function renderCart() {
+  const wrapper = $('#cart-content');
+  if (!wrapper) return;
+
+  const summary = getSummary();
+
+  if (!summary.items.length) {
+    wrapper.innerHTML = `
+      <div class="empty-state">
+        <div>✦</div>
+        <h2>Your cart is waiting</h2>
+        <p>Find something lovely for your next step.</p>
+        <a class="btn btn-primary" href="shop.html">Browse shoes</a>
+      </div>
+    `;
+    return;
+  }
+
+  wrapper.innerHTML = `
+    <div class="cart-layout">
+      <div class="cart-items">
+        ${summary.items.map((item) => {
+          const product = getProduct(item.id);
+          return `
+            <div class="cart-item">
+              <img src="${product.image}" alt="${product.name}">
+              <div>
+                <h3>${product.name}</h3>
+                <p>Size ${item.size} · ${product.color}</p>
+                <strong>${money(product.price)}</strong>
+                <div class="cart-controls">
+                  <button type="button" data-dec="${item.id}">−</button>
+                  <span>${item.qty}</span>
+                  <button type="button" data-inc="${item.id}">+</button>
+                  <button class="remove" type="button" data-remove="${item.id}">Remove</button>
+                </div>
+              </div>
+            </div>
+          `;
+        }).join('')}
+      </div>
+
+      <aside class="order-summary">
+        <h2>Order summary</h2>
+        <div><span>Subtotal</span><strong>${money(summary.subtotal)}</strong></div>
+        <div><span>Delivery</span><strong>${summary.delivery === 0 ? 'Free' : money(summary.delivery)}</strong></div>
+        <hr>
+        <div class="total"><span>Total</span><strong>${money(summary.total)}</strong></div>
+        <a class="btn btn-primary full" href="checkout.html">Proceed to checkout</a>
+        <a class="continue" href="shop.html">← Continue shopping</a>
+      </aside>
+    </div>
+  `;
+
+  $$('[data-inc]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const current = cart();
+      const item = current.find((entry) => entry.id === button.dataset.inc);
+      if (item) item.qty += 1;
+      saveCart(current);
+      renderCart();
+    });
+  });
+
+  $$('[data-dec]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const current = cart();
+      const item = current.find((entry) => entry.id === button.dataset.dec);
+      if (item) {
+        item.qty -= 1;
+        if (item.qty <= 0) {
+          const filtered = current.filter((entry) => entry.id !== button.dataset.dec);
+          saveCart(filtered);
+          renderCart();
+          return;
+        }
+      }
+      saveCart(current);
+      renderCart();
+    });
+  });
+
+  $$('[data-remove]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const current = cart().filter((item) => item.id !== button.dataset.remove);
+      saveCart(current);
+      renderCart();
+    });
+  });
+}
+
+function renderCheckout() {
+  const wrapper = $('#checkout-content');
+  if (!wrapper) return;
+
+  const summary = getSummary();
+
+  if (!summary.items.length) {
+    wrapper.innerHTML = `
+      <div class="empty-state">
+        <h2>Your cart is empty</h2>
+        <a class="btn btn-primary" href="shop.html">Shop shoes</a>
+      </div>
+    `;
+    return;
+  }
+
+  wrapper.innerHTML = `
+    <div class="checkout-layout">
+      <form id="checkout-form" class="checkout-form">
+        <h2>Delivery details</h2>
+        <div class="form-grid">
+          <label><span>Full name</span><input required name="name" autocomplete="name"></label>
+          <label><span>Mobile number</span><input required name="phone" placeholder="03XX XXXXXXX" pattern="03[0-9]{9}" autocomplete="tel"></label>
+          <label><span>Email</span><input type="email" name="email" autocomplete="email"></label>
+          <label><span>Province</span>
+            <select required name="province">
+              <option value="">Select province</option>
+              <option>Punjab</option>
+              <option>Sindh</option>
+              <option>Khyber Pakhtunkhwa</option>
+              <option>Balochistan</option>
+              <option>Islamabad Capital Territory</option>
+              <option>Gilgit-Baltistan</option>
+              <option>Azad Jammu & Kashmir</option>
+            </select>
+          </label>
+          <label><span>City</span><input required name="city"></label>
+          <label class="full"><span>Complete address</span><textarea required rows="3" name="address"></textarea></label>
+        </div>
+
+        <h2>Payment method</h2>
+        <label class="payment-option"><input type="radio" name="payment" value="cod" checked><span><strong>Cash on Delivery</strong><small>Pay when your order arrives</small></span></label>
+        <label class="payment-option"><input type="radio" name="payment" value="online"><span><strong>Online payment</strong><small>Secure provider checkout</small></span></label>
+
+        <button class="btn btn-primary full" type="submit">Place order · ${money(summary.total)}</button>
+        <p class="form-note">Online payments are securely processed by an external provider. Card details are never stored on this website.</p>
+      </form>
+
+      <aside class="order-summary">
+        <h2>Your order</h2>
+        ${summary.items.map((item) => {
+          const product = getProduct(item.id);
+          return `<div><span>${product.name} × ${item.qty}</span><strong>${money(product.price * item.qty)}</strong></div>`;
+        }).join('')}
+        <hr>
+        <div><span>Subtotal</span><strong>${money(summary.subtotal)}</strong></div>
+        <div><span>Delivery</span><strong>${summary.delivery === 0 ? 'Free' : money(summary.delivery)}</strong></div>
+        <div class="total"><span>Total</span><strong>${money(summary.total)}</strong></div>
+      </aside>
+    </div>
+  `;
+
+  $('#checkout-form')?.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const formData = new FormData(form);
+    const orderId = 'SS-' + Date.now().toString().slice(-8);
+
+    store.set('smartshoes-last-order', {
+      order: orderId,
+      name: formData.get('name'),
+      total: summary.total,
+      payment: formData.get('payment') || 'cod'
+    });
+
+    saveCart([]);
+    window.location.href = `order-success.html?order=${orderId}`;
+  });
+}
+
+function renderOrderSuccess() {
+  const box = $('#order-success-box');
+  if (!box) return;
+
+  const order = store.get('smartshoes-last-order', null);
+  if (!order) {
+    box.innerHTML = `
+      <span class="eyebrow">Order status</span>
+      <h1>Thanks for shopping</h1>
+      <p>Your order details are not available yet.</p>
+      <a class="btn btn-primary" href="shop.html">Continue shopping</a>
+    `;
+    return;
+  }
+
+  const paymentLabel = order.payment === 'online' ? 'Online payment' : 'Cash on Delivery';
+  box.innerHTML = `
+    <span class="eyebrow">Order confirmed</span>
+    <h1>Thank you, ${order.name}!</h1>
+    <p>Your order <strong>${order.order}</strong> has been placed successfully.</p>
+    <div class="success-grid">
+      <div><span>Payment</span><strong>${paymentLabel}</strong></div>
+      <div><span>Total</span><strong>${money(order.total)}</strong></div>
+    </div>
+    <p class="note">${order.payment === 'cod' ? 'Payment is due on delivery.' : 'Payment status will be confirmed by the secure payment provider after successful verification.'}</p>
+    <a class="btn btn-primary" href="shop.html">Continue shopping</a>
+  `;
+}
+
+function renderWishlist() {
+  const wrapper = $('#wishlist-content');
+  if (!wrapper) return;
+
+  const saved = wishlist();
+  if (!saved.length) {
+    wrapper.innerHTML = `
+      <div class="empty-state">
+        <div>♡</div>
+        <h2>Your wishlist is empty</h2>
+        <p>Save products you love and revisit them anytime.</p>
+        <a class="btn btn-primary" href="shop.html">Browse shoes</a>
+      </div>
+    `;
+    return;
+  }
+
+  const items = saved.map((id) => getProduct(id)).filter(Boolean);
+  wrapper.innerHTML = `
+    <div class="product-grid wishlist-grid">
+      ${items.map((product) => `
+        <article class="product-card">
+          <div class="product-image">
+            <a href="product.html?id=${product.id}"><img src="${product.image}" alt="${product.name}"></a>
+          </div>
+          <div class="product-info">
+            <h3><a href="product.html?id=${product.id}">${product.name}</a></h3>
+            <div class="price">${money(product.price)}</div>
+            <div class="card-bottom">
+              <button class="btn btn-primary" data-add="${product.id}">Add to cart</button>
+              <button class="btn btn-outline" data-remove-wish="${product.id}">Remove</button>
+            </div>
+          </div>
+        </article>
+      `).join('')}
+    </div>
+  `;
+
+  bindCardActions();
+  $$('[data-remove-wish]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const remaining = wishlist().filter((id) => id !== button.dataset.removeWish);
+      store.set('smartshoes-wishlist', remaining);
+      renderWishlist();
+    });
+  });
+}
+
+function renderAccount() {
+  const wrapper = $('#account-content');
+  if (!wrapper) return;
+
+  const isLoggedIn = false;
+  if (!isLoggedIn) {
+    wrapper.innerHTML = `
+      <section class="info-card account-card">
+        <h2>Sign in to manage your account</h2>
+        <p>Account data and order history require real authentication through a secure backend service.</p>
+        <a class="btn btn-primary" href="login.html">Go to login</a>
+      </section>
+    `;
+    return;
+  }
+
+  wrapper.innerHTML = `
+    <div class="account-grid">
+      <section class="info-card"><h3>Profile</h3><p>Name: SmartShoes Customer</p><p>Email: hello@smartshoes.pk</p></section>
+      <section class="info-card"><h3>Saved addresses</h3><p>House 18, Gulshan, Karachi</p></section>
+      <section class="info-card"><h3>Order history</h3><p>No recent orders</p></section>
+      <section class="info-card"><h3>Wishlist shortcut</h3><a href="wishlist.html" class="text-link">Open wishlist</a></section>
+    </div>
+  `;
+}
+
+function renderSearch() {
+  const form = $('#search-form');
+  const input = $('#search-input');
+  const results = $('#search-results');
+  if (!form || !results) return;
+
+  function doSearch(term = '') {
+    const query = term.trim().toLowerCase();
+    const matches = !query ? PRODUCTS : PRODUCTS.filter((product) => (
+      `${product.name} ${product.category} ${product.gender} ${product.brand} ${product.description}`.toLowerCase().includes(query)
+    ));
+
+    if (!matches.length) {
+      results.innerHTML = `
+        <div class="empty-state">
+          <div>⌕</div>
+          <h2>No results found</h2>
+          <p>Try a different keyword or browse a category.</p>
+          <a class="btn btn-primary" href="shop.html">Browse catalog</a>
+        </div>
+      `;
+      return;
+    }
+
+    results.innerHTML = `
+      <div class="results-meta"><strong>${matches.length} search result${matches.length > 1 ? 's' : ''}</strong></div>
+      <div class="product-grid">${matches.map(productCard).join('')}</div>
+    `;
+    bindCardActions();
+  }
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    doSearch(input.value);
+  });
+
+  const params = new URLSearchParams(location.search);
+  if (params.get('q')) {
+    input.value = params.get('q');
+    doSearch(params.get('q'));
+  } else {
+    doSearch();
+  }
+}
+
+function renderFaq() {
+  $$('.faq-question').forEach((button) => {
+    button.addEventListener('click', () => {
+      const parent = button.closest('.faq-item');
+      const isOpen = parent.classList.contains('open');
+      $$('.faq-item').forEach((item) => item.classList.remove('open'));
+      if (!isOpen) parent.classList.add('open');
+    });
+  });
+}
+
+function renderContactForm() {
+  const form = $('#contact-form');
+  const status = $('#contact-status');
+  if (!form) return;
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    status.textContent = 'Thanks! Your message has been queued for follow-up.';
+    form.reset();
+  });
+}
+
+function init() {
+  header();
+  footer();
+
+  const page = document.body.dataset.page;
+  if (page === 'home') renderHome();
+  if (page === 'shop') renderShop();
+  if (page === 'product') renderProduct();
+  if (page === 'cart') renderCart();
+  if (page === 'checkout') renderCheckout();
+  if (page === 'order-success') renderOrderSuccess();
+  if (page === 'wishlist') renderWishlist();
+  if (page === 'account') renderAccount();
+  if (page === 'search') renderSearch();
+  if (page === 'faq') renderFaq();
+  if (page === 'contact') renderContactForm();
+}
+
+window.addEventListener('DOMContentLoaded', init);
